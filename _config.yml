@@ -6,7 +6,7 @@ description: >-
   An independent organization at UW Stout partnering with our educator's
   union to improve conditions for all workers and student.
 logo: /assets/img/logo.png
-baseurl: "/wc-at-su"
+baseurl: "/"
 url: "https://wcatsu.work"
 
 email: workerscenteratstoutunited@gmail.com
