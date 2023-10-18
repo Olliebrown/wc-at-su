@@ -1,4 +1,5 @@
 ---
+title: Home
 layout: defaultNav
 menus: header
 ---
@@ -10,9 +11,12 @@ menus: header
 # Hello, UW Stout!
 We are the workers' Center at Stout United.  We are a group of workers at UW-Stout who are organizing to improve the conditions for all workers and students at Stout.  We work with, but are independent from, the educator's union, Stout United AFT Local 6503.
 
-## [What is a Worker Center?]({{ 'WorkerCenter' | relative_url }})
-
-## [WC@SU's Vision Statement]({{ 'Vision' | relative_url }})
+## Site Pages
+{% for entry in site.data.navigation %}
+    {% if entry.title != "Home" %}
+### [{{ entry.title }}]({{ entry.url | relative_url }})
+    {% endif %}
+{% endfor %}
 
 ## Social Media Feeds
 <!-- Stout United FB Feed -->
