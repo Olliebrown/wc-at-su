@@ -4,9 +4,9 @@ github: [metadata]
 title: Workers' Center at Stout United
 description: >-
   An independent organization at UW Stout partnering with our educator's
-  union to improve conditions for all workers and student.
+  union to improve conditions for all workers and students.
 logo: /assets/img/logo.png
-baseurl: "/"
+baseurl: ""
 url: "https://wcatsu.work"
 
 email: workerscenteratstoutunited@gmail.com

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: defaultNav
 title: Vision Statement
-permalink: /vision/
+permalink: /Vision/
+menus: header
 ---
 <style>
     tr, td {

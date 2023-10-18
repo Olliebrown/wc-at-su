@@ -1,4 +1,95 @@
 ---
 ---
-
 @import "{{ site.theme }}";
+
+.titleBar {
+    display: flex;
+    height: 100%;
+    width: 100%;  
+    flex-direction: row;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.menu-button-container {
+  display: flex;
+  height: 100%;
+  width: 30px;
+  padding-right: 20px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: rgb(64,82,139);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+.menu-close-button,
+.menu-close-button::before,
+.menu-close-button::after {
+  display: block;
+  background-color: rgb(116, 159, 219);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.menu-close-button::before {
+  content: '';
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+.menu-close-button {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  background: rgba(116, 159, 219, 0);
+}
+
+.menu-close-button::after {
+  content: '';
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.navigation-menu {
+  padding: 15px;
+
+  ul {
+    padding-left: 10px;
+    list-style: none;
+    li {
+      font-size: larger;
+    }
+  }
+
+  button {
+    width: 100%
+  }
+}
+
